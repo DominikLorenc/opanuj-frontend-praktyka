@@ -8,6 +8,7 @@ import SearchBar from '../components/SearchBar';
 import SortOptions from '../components/SortOptions';
 import useFetchCountries from '../hooks/useFetchCountries';
 import type { FilterType, SortOrder } from '../types';
+import React from 'react';
 
 const CountriesSearchContainer = () => {
   const [searchTerm, setSearchTerm] = useState<string>('');

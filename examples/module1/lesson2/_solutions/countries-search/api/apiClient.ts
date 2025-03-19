@@ -28,6 +28,8 @@ async function fetchAllCountries(): Promise<Country[]> {
 async function fetchCountriesByCurrency(currency: string): Promise<Country[]> {
   const response = await fetch(`${BASE_URL}/currency/${currency}`);
 
+  console.log(response);
+
   if (!response.ok) {
     throw new Error(
       generateErrorMessage('currency', currency, response.status === 404)
